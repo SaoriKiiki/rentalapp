@@ -1,0 +1,6 @@
+.etiqueta-descriptiva {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 18px;
+}

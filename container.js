@@ -1,23 +1,15 @@
-const initBox = document.querySelector(".album-friend");
+const initBox = document.querySelector(".album");
 
     const photos = []
     photos.push({
-             image: 'https://images.pexels.com/photos/1231230/pexels-photo-1231230.jpeg?cs=srgb&dl=pexels-sharefaith-1231230.jpg&fm=jpg'
+             image: './assets/ProjectOneLibertario.jpg'
     })
-    photos.push({
-             image: 'https://images.pexels.com/photos/745045/pexels-photo-745045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    })
-    photos.push({
-             image: 'https://images.pexels.com/photos/1037989/pexels-photo-1037989.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-})
-    photos.push({
-            image: 'https://images.pexels.com/photos/1037989/pexels-photo-1037989.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-})
+    
 
     function loadPhotos() {
 
     for ( photo of photos) {
-        const cardGroup = document.createElement('div');
+        const cardGroup = document.createElement('section');
         const groupImage = document.createElement('img');
 
         cardGroup.classList.add('photo')
