@@ -1,82 +1,81 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&display=swap");
 
 body {
-    box-sizing: border-box;
-    margin: 0;
-    font-size: 13px;
-    font-family: 'Alegreya Sans', sans-serif;
-    letter-spacing: 0.5px;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 13px;
+  font-family: "Alegreya Sans", sans-serif;
+  letter-spacing: 0.5px;
 }
 header {
-    width: 100%;
-    height: 60px;
-    display: grid;
+  width: 100%;
+  height: 60px;
+  display: grid;
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* nav menu*/
-.encircled-part{
-    display: grid;
-    grid-template-columns: 4fr 4.5fr 3fr;
-    grid-template-areas: 
-    "one . two";
+.encircled-part {
+  display: grid;
+  grid-template-columns: 4fr 4.5fr 3fr;
+  grid-template-areas: "one . two";
 }
 .one {
-    display: flex;
-    gap: 11px;
-    grid-area: one;  
-    list-style: none;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  gap: 11px;
+  grid-area: one;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
 }
 .two {
-    display: flex;
-    gap: 11px;
-    margin: 0;
-    padding: 0;
-    grid-area: two;  
-    list-style: none;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  gap: 11px;
+  margin: 0;
+  padding: 0;
+  grid-area: two;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
 }
 
 /*gallerie show*/
 .album {
-    display: grid;
-    grid-template-columns: 4fr 4fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "left center rigth";
-    margin: 67px;
-    gap: 67px;
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "left rigth"
+    "left1 rigth1";
+  margin: 67px;
+  gap: 67px;
 }
-.album-closed{
-    
+.album-closed {
 }
 
 .album-closed::before {
-    display: block;
-    content:'';
-    width: 100%;
-    height: 1px;
-    background-color: #dbdbdb;
-    margin-left: auto;
-    margin-right: auto;
-} 
-
-.photo > img {
-    width: 383px;
-    height: 250spx;
-    border-radius: 6px;
-    object-fit: cover;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  opacity: 0.5;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.developer-picture{
-    width: 22px;
-    height: 22px;
+.photo > img {
+  width: 383px;
+  height: 250spx;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.developer-picture {
+  width: 42px;
+  height: 42px;
 }

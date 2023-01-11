@@ -1,6 +1,10 @@
 .etiqueta-descriptiva {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    font-size: 18px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 18px;
+}
+.second-project {
+  width: 25%;
+  top: left;
 }
