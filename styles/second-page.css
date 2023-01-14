@@ -27,6 +27,8 @@
   margin: 0px 33px 0px 11px;
   font-family: "Lilita One", cursive;
   gap: 40px;
+  background-color: #48d1cc;
+  padding: 20px;
 }
 .first-layer {
   margin: 0px 3px 0px 196px;
