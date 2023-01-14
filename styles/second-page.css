@@ -1,10 +1,30 @@
+.second-album {
+  display: flex;
+  flex-direction: row;
+  margin-left: -39px;
+}
 .etiqueta-descriptiva {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   font-size: 18px;
-  margin: 0px 70px 0px 70px;
+  margin: 0px 3px 0px 121px;
   font-family: "Lilita One", cursive;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 500px);
+  grid-template-areas:
+    ".. "
+    ".. ";
+  width: 638px;
+  height: auto;
+}
+.first-layer {
+}
+.second-layer {
 }
 .third-project {
   overflow: hidden;
@@ -13,16 +33,5 @@
   border: 1px solid #999;
   border-radius: 10px;
   margin: 80px;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 638px;
-  height: auto;
-}
-.second-album {
-  display: flex;
-  flex-direction: row;
+  width: 346px;
 }
