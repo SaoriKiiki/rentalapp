@@ -1,12 +1,9 @@
 .second-album {
   display: flex;
   flex-direction: row;
-  margin-left: -39px;
+  margin-left: 39px;
 }
 .etiqueta-descriptiva {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
   font-size: 18px;
   margin: 0px 3px 0px 121px;
   font-family: "Lilita One", cursive;
@@ -21,10 +18,22 @@
     ".. ";
   width: 638px;
   height: auto;
+  gap: 59px;
+  margin-top: 59px;
+  margin-left: 151px;
+  justify-content: center;
+}
+.etiqueta-2 {
+  margin: 0px 33px 0px 11px;
+  font-family: "Lilita One", cursive;
+  gap: 40px;
 }
 .first-layer {
+  margin: 0px 3px 0px 121px;
 }
+
 .second-layer {
+  margin: 0px 3px 0px 121px;
 }
 .third-project {
   overflow: hidden;
@@ -32,6 +41,6 @@
   padding: 12px;
   border: 1px solid #999;
   border-radius: 10px;
-  margin: 80px;
+  margin: 0px;
   width: 346px;
 }
