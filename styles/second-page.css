@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: row;
   margin-left: 39px;
+  justify-content: space-evenly;
+  gap: 20px;
 }
 .etiqueta-descriptiva {
   font-size: 18px;
@@ -29,6 +31,7 @@
   gap: 40px;
   background-color: #48d1cc;
   padding: 20px;
+  width: 201px;
 }
 .first-layer {
   margin: 0px 3px 0px 196px;
