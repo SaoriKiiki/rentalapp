@@ -1,51 +1,27 @@
-.second-album {
+.etiqueta-descriptiva {
+  font-size: 14px;
+  margin: 0px 3px 0px 121px;
+  font-family: "Lilita One", cursive;
+}
+div.epsilon {
+  grid-area: alpha-1;
   display: flex;
   flex-direction: row;
-  margin-left: 39px;
+  margin: 55px 19px 20px 55px;
   justify-content: space-evenly;
-  gap: 20px;
+  height: 21px;
 }
-.etiqueta-descriptiva {
-  font-size: 18px;
-  margin: 0px 3px 0px 121px;
-  font-family: "Lilita One", cursive;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2, 500px);
-  grid-template-areas:
-    ".. "
-    ".. ";
-  width: 638px;
-  height: auto;
-  gap: 59px;
-  margin-top: 59px;
-  margin-left: 151px;
-  justify-content: center;
-}
-.etiqueta-2 {
+.etag-2 {
   margin: 0px 33px 0px 11px;
   font-family: "Lilita One", cursive;
-  gap: 40px;
-  background-color: #48d1cc;
-  padding: 20px;
-  width: 201px;
-}
-.first-layer {
-  margin: 0px 3px 0px 196px;
+  font-size: 15px;
 }
 
-.second-layer {
-  margin: 0px 3px 0px 121px;
-}
-.third-project {
-  overflow: hidden;
-  background: grey;
-  padding: 12px;
-  border: 1px solid #999;
-  border-radius: 10px;
-  margin: 0px;
-  width: 346px;
+div.third-one {
+  grid-area: alpha;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 26px;
+  margin-left: 54px;
 }

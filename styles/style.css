@@ -48,7 +48,7 @@ a {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "left rigth";
-  margin: 67px;
+  margin-left: 168px;
   gap: 67px;
 }
 
@@ -64,10 +64,20 @@ a {
 
 .photo > img {
   width: 383px;
-  height: 250spx;
+  height: 250px;
   border-radius: 6px;
   object-fit: cover;
   border: 14px solid #999;
+}
+
+img.frame-one {
+  height: 222px;
+  overflow: hidden;
+  background: grey;
+  padding: 12px;
+  border: 1px solid #999;
+  border-radius: 10px;
+  margin: 0px;
 }
 
 .developer-picture {
