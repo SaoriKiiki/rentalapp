@@ -3,10 +3,10 @@ const initBox = document.querySelector(".album");
 const photos = [];
 
 photos.push({
-  image: "./assets/ProjectOneLibertario.jpg"
+  image: ""
 });
 photos.push({
-  image: "./assets/pizza-website.jpg"
+  image: ""
 });
 
 function loadPhotos() {
@@ -16,7 +16,7 @@ function loadPhotos() {
 
     cardGroup.classList.add("photo");
 
-    groupImage.setAttribute("src", photo.image, photo.tag);
+    groupImage.setAttribute("src", photo.image);
 
     cardGroup.appendChild(groupImage);
     initBox.appendChild(cardGroup);

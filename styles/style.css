@@ -2,31 +2,36 @@
 body {
   box-sizing: border-box;
   margin: 0;
-  font-size: 19px;
   font-family: "Alegreya Sans", sans-serif;
   letter-spacing: 0.5px;
 }
 header {
   width: 100%;
-  height: 120px;
+  height: 155px;
   display: grid;
+  margin: 10px;
 }
-
+main {
+  display: grid;
+  margin: 0px 0px 0px 40px;
+}
+.gamma {
+  display: flex;
+}
 a {
   text-decoration: none;
   cursor: pointer;
 }
-
-/* nav menu*/
 nav.encircled-part {
   display: grid;
   grid-template-columns: 4fr 1fr 3fr;
   grid-template-areas: "one . two";
   margin: 30px 0px 30px 0px;
 }
-main {
-  display: flex;
-  flex-direction: column;
+
+.tag-margin {
+  margin: 0px 30px 0px 30px;
+  font-size: 13px;
 }
 .one {
   display: flex;
@@ -50,39 +55,17 @@ main {
 /*gallerie show*/
 .album {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "left rigth";
-  margin-left: 168px;
-  gap: 67px;
+  height: 300px;
+  margin: 55px 0px 20px 0px;
+  justify-content: space-evenly;
+  height: 21px;
 }
 
-.album-closed::before {
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: black;
-  opacity: 0.5;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.photo > img {
-  width: 383px;
+.frame-one {
   height: 250px;
-  border-radius: 6px;
-  object-fit: cover;
-  border: 14px solid #999;
-}
-
-img.frame-one {
-  height: 222px;
-  overflow: hidden;
-  background: grey;
   padding: 12px;
   border: 1px solid #999;
   border-radius: 10px;
-  margin: 0px;
 }
 
 .developer-picture {
