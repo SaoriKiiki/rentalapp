@@ -72,3 +72,9 @@ nav.encircled-part {
   width: 42px;
   height: 42px;
 }
+.last-one {
+  width: auto;
+  height: 400px;
+  overflow: hidden;
+  object-fit: fill;
+}
