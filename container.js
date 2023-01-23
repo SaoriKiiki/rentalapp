@@ -1,53 +1,54 @@
-const initBox = document.querySelector(".screen-container");
 
+
+const initBox = document.querySelector(".screen-container");
 const photoList = [];
 
 photoList.push({
-  tag: "Buró- Feria de Diseño Independiente, Bogotá -2022",
+  tag: "Buró- Feria de Diseño Independiente",
   image: "./assets/buro.jpg",
 });
 photoList.push({
-  tag: "Estereo Picnic- Concierto al Aire Libre, Bogotá -2022",
+  tag: "Estereo Picnic- Concierto al Aire Libre",
   image: "./assets/estereo.jpg",
 });
 photoList.push({
-  tag: "Miis Cosmetics- Maquillaje accequible, Bogotá -2022",
+  tag: "Miis Cosmetics- Maquillaje accequible",
   image: "./assets/miisCosmetics.jpg",
 });
 photoList.push({
-  tag: "Trendy- Maquillaje accequible, Bogotá -2022",
+  tag: "Trendy- Maquillaje accequible",
   image: "./assets/trendy.jpg",
 });
 photoList.push({
-  tag: "Ruby Rose- Maquillaje innovador cosmético, Bogotá -2022",
+  tag: "Ruby Rose- Maquillaje innovador cosmético",
   image: "./assets/screen.jpg",
 });
 photoList.push({
-  tag: "Bohio Playa- Cuidado y salud de la piel, Bogotá -2022",
+  tag: "Bohio Playa- Cuidado y salud de la piel",
   image: "./assets/bohio.jpg",
 });
 photoList.push({
-  tag: "Alelí- Decoración de interiores, Bogotá -2021",
+  tag: "Alelí- Decoración de interiores",
   image: "./assets/aleli.jpg",
 });
 photoList.push({
-  tag: "Soreil- Ropa íntima femenina, Bogotá -2021",
+  tag: "Soreil- Ropa íntima femenina",
   image: "./assets/soreil.jpg",
 });
 photoList.push({
-  tag: "Wawaw- Tienda para mascotas, Bogotá -2021",
+  tag: "Wawaw- Tienda para mascotas",
   image: "./assets/wawaw.jpg",
 });
 photoList.push({
-  tag: "Libertario- Cuidado y salud de la piel, Bogotá -2020",
+  tag: "Libertario- Cuidado y salud de la piel",
   image: "./assets/libertario.jpg",
 });
 photoList.push({
-  tag: "Loto del sur- Cuidado y salud de la piel, Bogotá -2020",
+  tag: "Loto del sur- Cuidado y salud de la piel",
   image: "./assets/loto-sur.jpg",
 });
 photoList.push({
-  tag: "D'amici- Restaurante italiano prêt a manger, Bogotá -2020",
+  tag: "D'amici- Restaurante italiano prêt a manger",
   image: "./assets/pizza-website.jpg",
 });
 function loadPhotos(array) {
@@ -64,7 +65,7 @@ function loadPhotos(array) {
 
     screenTag.appendChild(nameTag);
     cardGroup.appendChild(groupImage);
-    groupImage.appendChild(screenTag);
+    cardGroup.appendChild(screenTag);
     initBox.appendChild(cardGroup);
   }
 }

@@ -4,7 +4,7 @@
   grid-template-columns: repeat(auto-fill, 390px);
   gap: 91px;
   place-content: center;
-  margin-top: 10px;
+  margin-top: 56px;
 }
 .screen-card{
   width: 100%;
@@ -12,19 +12,18 @@
 .screen-card img{
   width: 390px;
   object-fit: cover;
+  border: 1px solid #999;
+  padding: 12px; 
+  border-radius: 10px;
 }
 .screen-info {
   display: flex;
-  height: auto;
-  flex-direction: row;
-  margin: 55px 19px 20px 55px;
-  justify-content: space-evenly;
   height: 21px;
+  justify-content: right;
 }
 
 p {
-  margin: 0px 33px 0px 11px;
-  font-family: "Lilita One", cursive;
+  margin-top: 20px;
   font-size: 15px;
 }
 footer {
@@ -41,18 +40,16 @@ footer {
   opacity: 0.8;
 }
 .centered {
-  position: absolute;
   left: 41%;
   top: 119%;
   font-family: "Voltaire", sans-serif;
   font-size: 40px;
-  background-color: black;
   padding: 15px;
   border-radius: 10px;
   text-align: center;
 }
 h1 {
-  color: white;
+  color: black;
   font-size: 17px;
   margin: 0px 17px 0px 15px ;
 }
