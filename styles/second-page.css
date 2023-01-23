@@ -1,0 +1,59 @@
+
+.screen-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 390px);
+  gap: 91px;
+  place-content: center;
+  margin-top: 10px;
+}
+.screen-card{
+  width: 100%;
+}
+.screen-card img{
+  width: 390px;
+  object-fit: cover;
+}
+.screen-info {
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  margin: 55px 19px 20px 55px;
+  justify-content: space-evenly;
+  height: 21px;
+}
+
+p {
+  margin: 0px 33px 0px 11px;
+  font-family: "Lilita One", cursive;
+  font-size: 15px;
+}
+footer {
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+}
+.frame-logo {
+  width: 100%;
+  margin-top: 80px;
+  height: 330px;
+  object-position: 0px 18%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.centered {
+  position: absolute;
+  left: 41%;
+  top: 119%;
+  font-family: "Voltaire", sans-serif;
+  font-size: 40px;
+  background-color: black;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+h1 {
+  color: white;
+  font-size: 17px;
+  margin: 0px 17px 0px 15px ;
+}
+
