@@ -4,7 +4,7 @@
   grid-template-columns: repeat(auto-fill, 390px);
   gap: 91px;
   place-content: center;
-  margin-top: 56px;
+  margin-top: 250px;
 }
 .screen-card{
   width: 100%;
