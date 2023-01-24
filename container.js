@@ -1,7 +1,16 @@
-
-
+const menuHamIcon = document.querySelector('.ham-icon');
+const mobileMenu = document.querySelector('.mobile-menu');
 const initBox = document.querySelector(".screen-container");
+
+
 const photoList = [];
+
+menuHamIcon.addEventListener('click', toggleMobileMenu);
+
+function toggleMobileMenu(){
+  mobileMenu.classList.toggle('inactive');
+}
+
 
 photoList.push({
   tag: "Buró- Feria de Diseño Independiente",

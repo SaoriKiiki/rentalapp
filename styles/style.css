@@ -21,12 +21,16 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+.inactive {
+  display: none;
+}
 nav.encircled-part {
   display: flex;
   justify-content: center;
   margin: 60px 0px 30px 0px;
 }
-.unfold-icon img{
+
+ .unfold-icon img {
   display: none;
   }
 
@@ -35,6 +39,7 @@ nav.encircled-part {
     display: flex;
     justify-content: space-around;
   }
+  
   ul.one, ul.two{
     display: none;
   }  
@@ -57,7 +62,9 @@ nav.encircled-part {
     width: 50px;
     text-align: left;
     }
+    
 }
+
 .tag-margin {
   margin: 0px 10px 0px 10px;
   font-size: 13px;
