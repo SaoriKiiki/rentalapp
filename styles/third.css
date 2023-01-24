@@ -73,3 +73,17 @@
     color: pink;
     font-size: 2rem;
   }
+  .footer-menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px 0 40px 0;
+  }
+  .footer-menu li{
+    text-decoration: none;
+    list-style: none;
+  }
+  .foot-loose img{
+    width: 40px;
+    margin: 40px;
+  }
