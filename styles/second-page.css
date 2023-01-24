@@ -4,10 +4,11 @@
   grid-template-columns: repeat(auto-fill, 390px);
   gap: 91px;
   place-content: center;
-  margin-top: 250px;
+  margin-top: 200px;
 }
-.screen-card{
-  width: 100%;
+
+.screen-card:hover{
+  opacity: 0.5;
 }
 .screen-card img{
   width: 390px;

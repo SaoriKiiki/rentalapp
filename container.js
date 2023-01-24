@@ -1,63 +1,80 @@
+/*Blog*/ 
+const lastWriting = document.getElementById('unfold-blog');
+const seeText = document.getElementById('writes');
+/*About Me*/
+const aboutMe = document.getElementById('unfold-card');
+const selectProfile = document.getElementById('profile-card');
+/*Mobile*/
 const menuHamIcon = document.querySelector('.ham-icon');
 const mobileMenu = document.querySelector('.mobile-menu');
 const initBox = document.querySelector(".screen-container");
 
-
 const photoList = [];
 
+lastWriting.addEventListener('click', toggleBrief);
+aboutMe.addEventListener('click', togglePersonalCard);
 menuHamIcon.addEventListener('click', toggleMobileMenu);
 
 function toggleMobileMenu(){
   mobileMenu.classList.toggle('inactive');
 }
-
-
+function togglePersonalCard() {
+  window.scrollTo(0, 0);
+  seeText.style.display = 'none';
+  selectProfile.style.display = 'flex';
+}
+function toggleBrief() {
+  window.scrollTo(0, 0);
+  seeText.style.display = 'flex';
+  selectProfile.style.display = 'none';
+}
 photoList.push({
-  tag: "Buró- Feria de Diseño Independiente",
+  tag: "https://www.feriaburo.com/",
   image: "./assets/buro.jpg",
 });
 photoList.push({
-  tag: "Estereo Picnic- Concierto al Aire Libre",
+  tag: "https://www.festivalestereopicnic.com/#/",
   image: "./assets/estereo.jpg",
 });
 photoList.push({
-  tag: "Miis Cosmetics- Maquillaje accequible",
+  tag: "https://miiscosmetics.com/",
   image: "./assets/miisCosmetics.jpg",
 });
 photoList.push({
-  tag: "Trendy- Maquillaje accequible",
+  tag: "https://maquillajetrendyshop.com/",
   image: "./assets/trendy.jpg",
 });
 photoList.push({
-  tag: "Ruby Rose- Maquillaje innovador cosmético",
+  tag: "https://www.rubyrose.com.co/",
   image: "./assets/screen.jpg",
+  href: "",
 });
 photoList.push({
-  tag: "Bohio Playa- Cuidado y salud de la piel",
+  tag: "https://bohioplaya.com/",
   image: "./assets/bohio.jpg",
 });
 photoList.push({
-  tag: "Alelí- Decoración de interiores",
+  tag: "https://www.alelihomedecor.com/",
   image: "./assets/aleli.jpg",
 });
 photoList.push({
-  tag: "Soreil- Ropa íntima femenina",
+  tag: "https://soreil.com.co/es",
   image: "./assets/soreil.jpg",
 });
 photoList.push({
-  tag: "Wawaw- Tienda para mascotas",
+  tag: "https://wawaw.co/",
   image: "./assets/wawaw.jpg",
 });
 photoList.push({
-  tag: "Libertario- Cuidado y salud de la piel",
+  tag: "https://libertariocoffee.co/",
   image: "./assets/libertario.jpg",
 });
 photoList.push({
-  tag: "Loto del sur- Cuidado y salud de la piel",
+  tag: "https://www.lotodelsur.com/",
   image: "./assets/loto-sur.jpg",
 });
 photoList.push({
-  tag: "D'amici- Restaurante italiano prêt a manger",
+  tag: "http://damici.co/",
   image: "./assets/pizza-website.jpg",
 });
 function loadPhotos(array) {
@@ -66,11 +83,13 @@ function loadPhotos(array) {
     const groupImage = document.createElement("img");
     const screenTag = document.createElement("div");
     const nameTag = document.createElement("p");
+    const linkPage = document.createElement("p");
 
     cardGroup.classList.add("screen-card");
     groupImage.setAttribute("src", photo.image);
     screenTag.classList.add("screen-info");
     nameTag.innerText = photo.tag;
+    linkPage.innerHTML = photo.href;
 
     screenTag.appendChild(nameTag);
     cardGroup.appendChild(groupImage);

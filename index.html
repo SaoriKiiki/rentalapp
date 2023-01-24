@@ -7,6 +7,7 @@
     <title>Portfolio UI / UX Designer</title>
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/second-page.css" />
+    <link rel="stylesheet" href="./styles/third.css" />
   </head>
   <body>
     <header>
@@ -16,28 +17,20 @@
         </div>
         
           <ul class="one">
-            <img
+            <a href="/"><img
               class="developer-picture"
               src="./assets/CircleVirtAssistance.jpg"
-            />
-            <li class="tag-margin">About Me</li>
-            <li class="tag-margin">LinkedIn</li>
-            <li class="tag-margin">Blog</li>
-          </ul>
-         
-          <ul class="two">
-            <li class="tag-margin">
-              <a href="">Profile</a>
+            /></a>
+            <li class="tag-margin" id="unfold-card">
+              <a>About Me</a>
             </li>
-            <li class="tag-margin">
-              <a href="">Timeline</a>
-            </li>
-            <li class="tag-margin">
-              <a href="">High Fidelity</a>
-            </li>
-          </ul> 
+            <li class="tag-margin" id="unfold-blog">
+              <a>Blog</a>
+            </li>      
+          </ul>         
+          
           <div class="logo-icon">
-            <img width="110px" height="auto" src="./assets/bear.png" />
+            <a><img width="110px" height="auto" src="./assets/bear.png" /></a>
           </div>
         
         <div class="mobile-menu inactive">
@@ -45,24 +38,24 @@
             <li>
               <a href="/">PORTFOLIO</a>
             </li>
-            <li>
-              <a href="/">About Me</a>
-            </li>
-            <li>        
-              <a href="/">LinkedIn</a>
-            </li>
-            <li>
-              <a href="/">Other</a>
-            </li>
-          </ul>
-      
+            
           <ul>
             <li>
-              <a href="/">My orders</a>
+              <a href="https://www.linkedin.com/in/saori-tovar-64890b166/" target="_blank">LinkedIn</a>
             </li>
             <li>
-              <a href="/">My account</a>
+              <a href="https://dribbble.com/SaoriUX" target="_blank">Dribble</a>
             </li>
+            <li>
+              <a href="https://www.behance.net/arteisa201c55a/" target="_blank">Behance</a>
+            </li>
+            <li>
+              <a href="https://saoridev.blogspot.com/" target="_blank">Blogger</a>
+            </li>
+            <li>
+              <a href="https://linkr.bio/saoridev" target="_blank">Linkr</a>
+            </li>
+            
           </ul>
       
          
@@ -70,9 +63,28 @@
        </nav>
     </header>
     <main>
+      <section id="profile-card" class="inactive">
+        <div class="who-am-i">
+          <h2>About Me</h2>
+          <p>"The difference between a good designer and an excelent one is when the concept is solid and speaks by it self, this means no words are needed."</p>
+          <h1>Hello, my name is Saori and I am a graphic designer with 4 years of experience in UI/UX</h1>
+        </div>
+      </section>
+      <section id="writes" class="inactive">
+        <div class="what-i-think">
+          <h2>Blog</h2>
+          <h1>From Web design to front-end Development</h1>
+          <p>Wednesday is to write and get out of the routine. Without realizing it... today I did the tasks that as a web designer I did but too fast. Although as a Front-end Developer I definitely spend more time at the console and in the code editor.</p>
+          <a target="_blank" href="https://saoridev.blogspot.com/2022/07/del-diseno-web-al-desarrollo-front-end.html">Read...</a>
+        
+        </div>
+      </section>
+      
+    </section>
       <div class="screen-container">    
       </div>
     </main>
+    
     <section>
       <div>
         <img class="frame-logo" src="./assets/logo-01.png" />
