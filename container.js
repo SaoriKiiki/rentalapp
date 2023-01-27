@@ -1,99 +1,101 @@
-/*Blog*/ 
-const lastWriting = document.getElementById('unfold-blog');
-const seeText = document.getElementById('writes');
+/*Blog*/
+
+const lastWriting = document.getElementById("unfold-blog");
+const seeText = document.getElementById("writes");
 /*About Me*/
-const aboutMe = document.getElementById('unfold-card');
-const selectProfile = document.getElementById('profile-card');
+const aboutMe = document.getElementById("unfold-card");
+const selectProfile = document.getElementById("profile-card");
 /*Mobile*/
-const menuHamIcon = document.querySelector('.ham-icon');
-const mobileMenu = document.querySelector('.mobile-menu');
+const menuHamIcon = document.querySelector(".ham-icon");
+const mobileMenu = document.querySelector(".mobile-menu");
 const initBox = document.querySelector(".screen-container");
 
 const photoList = [];
 
-lastWriting.addEventListener('click', toggleBrief);
-aboutMe.addEventListener('click', togglePersonalCard);
-menuHamIcon.addEventListener('click', toggleMobileMenu);
+lastWriting.addEventListener("click", toggleBrief);
+aboutMe.addEventListener("click", togglePersonalCard);
+menuHamIcon.addEventListener("click", toggleMobileMenu);
 
-function toggleMobileMenu(){
-  mobileMenu.classList.toggle('inactive');
+function toggleMobileMenu() {
+  mobileMenu.classList.toggle("inactive");
 }
 function togglePersonalCard() {
   window.scrollTo(0, 0);
-  seeText.style.display = 'none';
-  selectProfile.style.display = 'flex';
+  seeText.style.display = "none";
+  selectProfile.style.display = "flex";
 }
 function toggleBrief() {
   window.scrollTo(0, 0);
-  seeText.style.display = 'flex';
-  selectProfile.style.display = 'none';
+  seeText.style.display = "flex";
+  selectProfile.style.display = "none";
 }
 photoList.push({
-  tag: "https://www.feriaburo.com/",
   image: "./assets/buro.jpg",
+  tag: "https://www.feriaburo.com/"
 });
 photoList.push({
-  tag: "https://www.festivalestereopicnic.com/#/",
   image: "./assets/estereo.jpg",
+  tag: "https://www.festivalestereopicnic.com/#/"
 });
 photoList.push({
-  tag: "https://miiscosmetics.com/",
   image: "./assets/miisCosmetics.jpg",
+  tag: "https://miiscosmetics.com/"
 });
 photoList.push({
-  tag: "https://maquillajetrendyshop.com/",
   image: "./assets/trendy.jpg",
+  tag: "https://maquillajetrendyshop.com/"
 });
 photoList.push({
-  tag: "https://www.rubyrose.com.co/",
   image: "./assets/screen.jpg",
-  href: "",
+  tag: "https://www.rubyrose.com.co/"
 });
 photoList.push({
-  tag: "https://bohioplaya.com/",
   image: "./assets/bohio.jpg",
+  tag: "https://bohioplaya.com/"
 });
 photoList.push({
-  tag: "https://www.alelihomedecor.com/",
   image: "./assets/aleli.jpg",
+  tag: "https://www.alelihomedecor.com/"
 });
 photoList.push({
-  tag: "https://soreil.com.co/es",
   image: "./assets/soreil.jpg",
+  tag: "https://soreil.com.co/es"
 });
 photoList.push({
-  tag: "https://wawaw.co/",
   image: "./assets/wawaw.jpg",
+  tag: "https://wawaw.co/"
 });
 photoList.push({
-  tag: "https://libertariocoffee.co/",
   image: "./assets/libertario.jpg",
+  tag: "https://libertariocoffee.co/"
 });
 photoList.push({
-  tag: "https://www.lotodelsur.com/",
   image: "./assets/loto-sur.jpg",
+  tag: "https://www.lotodelsur.com/"
 });
 photoList.push({
-  tag: "http://damici.co/",
   image: "./assets/pizza-website.jpg",
+  tag: "http://damici.co/"
 });
 function loadPhotos(array) {
   for (photo of array) {
     const cardGroup = document.createElement("div");
+    const ancherLink = document.createElement("a");
     const groupImage = document.createElement("img");
     const screenTag = document.createElement("div");
     const nameTag = document.createElement("p");
-    const linkPage = document.createElement("p");
 
     cardGroup.classList.add("screen-card");
-    groupImage.setAttribute("src", photo.image);
-    screenTag.classList.add("screen-info");
-    nameTag.innerText = photo.tag;
-    linkPage.innerHTML = photo.href;
+    groupImage.setAttribute("src", photo.image, photo.tag);
+    //screenTag.classList.add("screen-info");
+    ancherLink.setAttribute("href", photo.tag);
+    ancherLink.setAttribute("target", "_blank");
+    ancherLink.innerHTML = photo.tag;
 
-    screenTag.appendChild(nameTag);
-    cardGroup.appendChild(groupImage);
-    cardGroup.appendChild(screenTag);
+    //screenTag.appendChild(nameTag);
+    cardGroup.appendChild(ancherLink);
+    ancherLink.appendChild(groupImage);
+    //cardGroup.appendChild(screenTag);
     initBox.appendChild(cardGroup);
   }
 }
