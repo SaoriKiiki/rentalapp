@@ -1,5 +1,4 @@
-
-.screen-container{
+.screen-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, 390px);
   gap: 91px;
@@ -7,14 +6,14 @@
   margin-top: 200px;
 }
 
-.screen-card:hover{
+.screen-card:hover {
   opacity: 0.5;
 }
-.screen-card img{
+.screen-card img {
   width: 390px;
   object-fit: cover;
   border: 1px solid #999;
-  padding: 12px; 
+  padding: 12px;
   border-radius: 10px;
 }
 .screen-info {
@@ -46,16 +45,17 @@ footer {
   font-family: "Voltaire", sans-serif;
   font-size: 40px;
   padding: 15px;
+  line-height: 2rem;
   border-radius: 10px;
   text-align: center;
 }
 h1 {
   color: black;
   font-size: 17px;
-  margin: 0px 17px 0px 15px ;
+  margin: 0px 17px 0px 15px;
 }
 /*Responsive  Design*/
-.mobile-menu{
+.mobile-menu {
   position: absolute;
   padding: 124px 0 40px 120px;
   background-color: white;
@@ -87,8 +87,8 @@ h1 {
   font-size: var(--sm);
   color: var(--hospital-green) !important;
 }
-@media (min-width: 641px){
-  .mobile-menu{
+@media (min-width: 641px) {
+  .mobile-menu {
     display: none;
   }
 }
