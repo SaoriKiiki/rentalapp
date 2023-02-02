@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;900&family=Kalam:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;400;500;900&family=Kalam:wght@300&display=swap");
 body,
 * {
   box-sizing: border-box;
@@ -13,13 +13,20 @@ header {
   background-color: white;
   z-index: 1;
 }
-main{
+main {
   display: grid;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
+}
+div a .read {
+  font-family: "Kalam", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  color: blueviolet;
+  padding: 240px 0 40px 0px;
 }
 .inactive {
   display: none;
@@ -30,59 +37,59 @@ nav.encircled-part {
   margin: 60px 0px 30px 0px;
 }
 
- .unfold-icon img {
+.unfold-icon img {
   display: none;
-  }
+}
 
 @media (max-width: 640px) {
-  nav.encircled-part{
+  nav.encircled-part {
     display: flex;
     justify-content: space-around;
   }
-  
-  ul.one, ul.two{
+
+  ul.one,
+  ul.two {
     display: none;
-  }  
-  .unfold-icon img{
+  }
+  .unfold-icon img {
     display: block;
     width: 50px;
     text-align: left;
-    }
+  }
 }
 @media (max-width: 780px) {
-  nav.encircled-part{
+  nav.encircled-part {
     display: flex;
     justify-content: space-around;
   }
-  ul.one{
+  ul.one {
     display: none;
-  }  
-  .unfold-icon img{
+  }
+  .unfold-icon img {
     display: block;
     width: 50px;
     text-align: left;
-    }
-    
+  }
 }
 
 .tag-margin {
   margin: 0px 30px 0px 30px;
-  font-size: 13px;
+  font-size: 3rem;
 }
-#home a:hover{
+#home a:hover {
   color: pink;
-  font-size: 1.2em;
+  font-size: 30px;
   text-decoration: none;
 }
 /*About Me*/
-#unfold-card a:hover{
+#unfold-card a:hover {
   color: pink;
   font-size: 1.2em;
 }
 
 /*Blog*/
-#unfold-blog a:hover{
-  color: #90CAF9;
+#unfold-blog a:hover {
+  color: #90caf9;
   font-size: 1.2em;
 }
 
@@ -118,4 +125,3 @@ nav.encircled-part {
   width: 102px;
   height: 102px;
 }
-
