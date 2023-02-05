@@ -37,9 +37,33 @@ nav.encircled-part {
   margin: 60px 0px 30px 0px;
 }
 
-.unfold-icon img {
+#unfold-icon > img {
   display: none;
 }
+#left-menu {
+  padding: 10px 0 10px 10px;
+  background-color: white;
+  z-index: -1;
+}
+#left-menu a {
+  text-decoration: none;
+  color: var(--black);
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 100;
+  /* margin-bottom: 24px; */
+}
+#left-menu ul {
+  padding: 0;
+  margin: 4px 0 0;
+  list-style: none;
+}
+#left-menu ul:nth-child(1) {
+  border-bottom: 1px solid var(--very-light-pink);
+}
+#left-menu ul li {
+  margin-bottom: 4px;
+}
+
 
 @media (max-width: 640px) {
   nav.encircled-part {
@@ -51,10 +75,38 @@ nav.encircled-part {
   ul.two {
     display: none;
   }
-  .unfold-icon img {
+  #unfold-icon > img {
     display: block;
     width: 50px;
     text-align: left;
+  }
+  #left-menu {
+    display: flex;
+  }
+  #left-menu {
+    position: absolute;
+    padding: 64px 18px 40px 55px;
+    background-color: white;
+    z-index: -1;
+    width: 100%;
+    left: 0;
+  }
+  #left-menu a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    /* margin-bottom: 24px; */
+  }
+  #left-menu ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+  }
+  #left-menu ul:nth-child(1) {
+    border-bottom: 1px solid var(--very-light-pink);
+  }
+  #left-menu ul li {
+    margin-bottom: 24px;
   }
 }
 @media (max-width: 780px) {
@@ -65,10 +117,36 @@ nav.encircled-part {
   ul.one {
     display: none;
   }
-  .unfold-icon img {
+  #unfold-icon > img {
     display: block;
     width: 50px;
     text-align: left;
+  }
+  #left-menu {
+    position: absolute;
+    padding: 64px 18px 40px 117px;
+    background-color: white;
+    z-index: -1;
+    width: 100%;
+    left: 0;
+
+  }
+  #left-menu a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    /* margin-bottom: 24px; */
+  }
+  #left-menu ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+  }
+  #left-menu ul:nth-child(1) {
+    border-bottom: 1px solid var(--very-light-pink);
+  }
+  #left-menu ul li {
+    margin-bottom: 24px;
   }
 }
 
@@ -87,6 +165,13 @@ nav.encircled-part {
   font-size: 1.2em;
 }
 
+
+#profile-card > div > h1 > span {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  padding: 1rem;
+}
 /*Blog*/
 #unfold-blog a:hover {
   color: #90caf9;
