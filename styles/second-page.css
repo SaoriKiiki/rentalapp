@@ -1,31 +1,18 @@
 .experience-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 190px);
-  gap: 91px;
+  grid-template-columns: repeat(1, 390px);
   place-content: center;
   background-color: #D6EAF8;
-  
+  padding: 240px 40px 0px 40px;
+  z-index: 1;  
+  margin-left: 250px;
+  margin-right: 250px;
 }
-section ul > ul {
-  padding: 240px 0px 0px 0px;
-  margin: 0;
+.experience-container li {
   font-family: "Alegreya Sans", sans-serif;
-}
-.experience-container > li{
-  z-index: 1;
-}
-.experience-container > li:nth-child(1){
-  grid-column-start: 1;
-}
-.experience-container > li:nth-child(2){
-  grid-column-start: 2;
-}
-.experience-container > li:nth-child(3){
-  grid-column-start: 3;
-}
-.experience-container > li {
-  text-decoration: none;
   list-style: none;
+  padding-bottom: 40px;
+  text-decoration: none;
 }
 
 .screen-container {
@@ -34,7 +21,7 @@ section ul > ul {
   gap: 91px;
   text-align: center;
   place-content: center;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .screen-card:hover {

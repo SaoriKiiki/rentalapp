@@ -31,10 +31,10 @@ const photoList = [];
 
 //Mosaic of services explained
 titleLists.push({
-  basic: "List of main activities ",
-  question: "Deploy a Website ",
-  answer:"Checked and shared "
+  basic: "The main activities I did where related to branding and marketing from the developers perspective. To upload a website with HTML and CSS features ready to design and to be offered into the market. To ask for reviews from my peers colleges. To assist team meetings, mediate terms and conditions, coordinate updates, debug errors.",
+  
 })
+/*
 titleLists.push({
   basic: "Strenghts",
   question: "How do I feel about my achievements?",
@@ -45,7 +45,7 @@ titleLists.push({
   question: "Why it was difficult to work?",
   answer:"Perfectionism, specificity in technical abstractions, doing unsignificant and artificial tasks is very difficult for me."
 })
-
+*/
 //Mosaic of websites developed
 photoList.push({
   tag: "https://www.feriaburo.com/",
@@ -179,7 +179,7 @@ function toggleRoutine(){
 }
 function startTitles(secondArray) {
   for (title of secondArray) {
-    const contentTitle = document.createElement("ul");
+    const contentTitle = document.createElement("li");
 
     contentTitle.innerHTML = title.basic;
     contentTitle.classList.add("list-styles");

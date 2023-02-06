@@ -1,4 +1,10 @@
 @media (max-width: 780px) {
+  .screen-container {
+    margin-top: 200px;
+  }
+  .experience-container {
+    display: none;
+  }
   nav.encircled-part {
     display: flex;
     justify-content: space-around;
@@ -39,6 +45,9 @@
 }
 
 @media (max-width: 640px) {
+  .screen-container {
+    margin-top: 250px;
+  }
   .experience-container {
     display: none;
   }
