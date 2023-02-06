@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;400;500;900&family=Kalam:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;200;300;400;500;900&family=Kalam:wght@300&display=swap");
 body,
 * {
   box-sizing: border-box;
@@ -63,10 +63,6 @@ nav.encircled-part {
 #left-menu ul li {
   margin-bottom: 4px;
 }
-
-
-
-
 .tag-margin {
   margin: 0px 30px 0px 30px;
   font-size: 2rem;
@@ -82,10 +78,9 @@ nav.encircled-part {
   font-size: 1.2em;
 }
 
-
 #profile-card > div > h1 > span {
   font-family: "Alegreya Sans", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1rem;
   padding: 1rem;
 }
@@ -95,7 +90,7 @@ nav.encircled-part {
   font-size: 1.2em;
 }
 #unfold-experience a:hover {
-  color: #9932CC;
+  color: #9932cc;
   font-size: 1.2em;
 }
 

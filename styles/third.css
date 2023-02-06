@@ -13,10 +13,9 @@
 }
 .who-am-i h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1rem;
   font-family: "Alegreya Sans", sans-serif;
   font-style: bold;
-  color: pink;
   padding: 240px 0 40px 0px;
 }
 .who-am-i h1 {
@@ -27,7 +26,7 @@
   line-height: 1em;
 }
 .who-am-i p {
-  text-align: center;
+  text-align: left;
   padding: 0px 210px 0 210px;
   font-size: 1.4rem;
 }
@@ -44,10 +43,9 @@
 }
 .what-i-think h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1rem;
   font-family: "Alegreya Sans", sans-serif;
-  font-weight: 400;
-  color: #90caf9;
+  font-style: bold;
   padding: 240px 0 40px 0px;
 }
 .what-i-think h1 {

@@ -1,13 +1,11 @@
-
-
 /*Menu aside*/
-let toggleStatus = 1
+let toggleStatus = 1;
 /*Mobile*/
 const menuHamIcon = document.getElementById("unfold-icon");
-const asideMenu = document.getElementById("left-menu")
+const asideMenu = document.getElementById("left-menu");
 const asideBanners = [];
 /*Header Blog*/
-let infoCapsule
+let infoCapsule;
 const lastWriting = document.getElementById("unfold-blog");
 const seeText = document.getElementById("writes");
 /* Header About Me*/
@@ -18,8 +16,6 @@ const initTitle = document.getElementById("unfold-experience");
 const viewTask = document.querySelector(".experience-container");
 /* Body content */
 const initBox = document.querySelector(".screen-container");
-
-
 
 menuHamIcon.addEventListener("click", rowOfArguments);
 lastWriting.addEventListener("click", toggleBrief);
@@ -32,13 +28,9 @@ const photoList = [];
 
 //Mosaic of services explained
 titleLists.push({
-  basic: "Graphic designer +4 years of experience designing around softwares as Figma, Adobe XD 
-and more user interfaces creation. English proficiency and fluency. Styling for the interactions 
-modules for Version Books for web-based and mobile apps regarding brand and marketing. 
-Work in team and give a professional style to each design, with a unique and personal 
-concept, used to get things done and used to design systems. ",
-  
-})
+  basic:
+    "Graphic designer +4 years of experience designing around softwares as Figma, Adobe XD and more user interfaces creation. English proficiency and fluency. Styling for the interactions modules for Version Books for web-based and mobile apps regarding brand and marketing. "
+});
 /*
 titleLists.push({
   basic: "Strenghts",
@@ -101,16 +93,16 @@ photoList.push({
   image: "./assets/pizza-website.jpg"
 });
 //Display main tasks during my experience
-function toggleRoutine(){
+function toggleRoutine() {
   window.scrollTo(0, 0);
-  seeText.style.display="none";
-  selectProfile.style.display="none";
+  seeText.style.display = "none";
+  selectProfile.style.display = "none";
   if (toggleStatus == 1) {
     viewTask.style.display = "grid";
-    toggleStatus = 0
+    toggleStatus = 0;
   } else if (toggleStatus == 0) {
     viewTask.style.display = "none";
-    toggleStatus = 1
+    toggleStatus = 1;
   }
 }
 //Display headers
@@ -119,11 +111,11 @@ function togglePersonalCard() {
   viewTask.style.display = "none";
   seeText.style.display = "none";
   if (toggleStatus == 1) {
-  selectProfile.style.display = "flex";
-  toggleStatus = 0
+    selectProfile.style.display = "flex";
+    toggleStatus = 0;
   } else if (toggleStatus == 0) {
     selectProfile.style.display = "none";
-    toggleStatus = 1    
+    toggleStatus = 1;
   }
 }
 function toggleBrief() {
@@ -133,18 +125,16 @@ function toggleBrief() {
   if (toggleStatus == 1) {
     seeText.style.display = "flex";
     toggleStatus = 0;
-  } else if ( toggleStatus == 0) {
+  } else if (toggleStatus == 0) {
     seeText.style.display = "none";
-    toggleStatus = 1
+    toggleStatus = 1;
   }
-
-  
 }
 // Display options on the left
-function rowOfArguments () {
+function rowOfArguments() {
   if (toggleStatus == 1) {
-      asideMenu.style.display = "flex"
-      launchNew = `
+    asideMenu.style.display = "flex";
+    launchNew = `
       <ul>
                       <li>
                         <a href="/">SOCIAL MEDIA</a>
@@ -160,26 +150,25 @@ function rowOfArguments () {
                         <a href="https://saoridev.blogspot.com/" target="_blank">Blogger</a>
                       </li>            
               </ul>
-      `
-    asideMenu.innerHTML = launchNew
+      `;
+    asideMenu.innerHTML = launchNew;
     toggleStatus = 0;
   } else if (toggleStatus == 0) {
     asideMenu.style.display = "none";
-    toggleStatus = 1
-    
-  }  
+    toggleStatus = 1;
+  }
 }
 //Display main tasks during my experience
-function toggleRoutine(){
+function toggleRoutine() {
   window.scrollTo(0, 0);
-  seeText.style.display="none";
-  selectProfile.style.display="none";
+  seeText.style.display = "none";
+  selectProfile.style.display = "none";
   if (toggleStatus == 1) {
     viewTask.style.display = "flex";
-    toggleStatus = 0
+    toggleStatus = 0;
   } else if (toggleStatus == 0) {
     viewTask.style.display = "none";
-    toggleStatus = 1
+    toggleStatus = 1;
   }
 }
 function startTitles(secondArray) {
@@ -190,7 +179,7 @@ function startTitles(secondArray) {
     contentTitle.classList.add("list-styles");
     viewTask.appendChild(contentTitle);
   }
-} 
+}
 function loadPhotos(array) {
   for (photo of array) {
     const cardGroup = document.createElement("div");
@@ -203,7 +192,6 @@ function loadPhotos(array) {
     ancherLink.setAttribute("href", photo.tag);
     ancherLink.setAttribute("target", "_blank");
     groupImage.setAttribute("src", photo.image);
-    
 
     cardGroup.appendChild(ancherLink);
     ancherLink.appendChild(groupImage);
@@ -212,5 +200,4 @@ function loadPhotos(array) {
   startTitles(titleLists);
 }
 
-
-loadPhotos(photoList)
+loadPhotos(photoList);
