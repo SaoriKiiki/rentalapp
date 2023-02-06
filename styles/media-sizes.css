@@ -1,115 +1,111 @@
 @media (max-width: 780px) {
-    nav.encircled-part {
-      display: flex;
-      justify-content: space-around;
-    }
-    ul.one {
-      display: none;
-    }
-    #unfold-icon > img {
-      display: block;
-      width: 50px;
-      text-align: left;
-    }
-    #left-menu {
-      position: absolute;
-      padding: 64px 18px 40px 117px;
-      background-color: white;
-      z-index: -1;
-      width: 100%;
-      left: 0;
-  
-    }
-    #left-menu a {
-      text-decoration: none;
-      color: var(--black);
-      font-weight: bold;
-      /* margin-bottom: 24px; */
-    }
-    #left-menu ul {
-      padding: 0;
-      margin: 24px 0 0;
-      list-style: none;
-    }
-    #left-menu ul:nth-child(1) {
-      border-bottom: 1px solid var(--very-light-pink);
-    }
-    #left-menu ul li {
-      margin-bottom: 24px;
-    }
+  nav.encircled-part {
+    display: flex;
+    justify-content: space-around;
+  }
+  ul.one {
+    display: none;
+  }
+  #unfold-icon > img {
+    display: block;
+    width: 50px;
+    text-align: left;
+  }
+  #left-menu {
+    position: absolute;
+    padding: 64px 18px 40px 117px;
+    background-color: white;
+    z-index: -1;
+    width: 100%;
+    left: 0;
+  }
+  #left-menu a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    /* margin-bottom: 24px; */
+  }
+  #left-menu ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+  }
+  #left-menu ul:nth-child(1) {
+    border-bottom: 1px solid var(--very-light-pink);
+  }
+  #left-menu ul li {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .experience-container {
+    display: none;
+  }
+  nav.encircled-part {
+    display: flex;
+    justify-content: space-around;
   }
 
-  @media (max-width: 640px) {
-    .experience-container {
-        display: none;
-    }
-    nav.encircled-part {
-      display: flex;
-      justify-content: space-around;
-    }
-  
-    ul.one,
-    ul.two {
-      display: none;
-    }
-    #unfold-icon > img {
-      display: block;
-      width: 50px;
-      text-align: left;
-    }
-    #left-menu {
-      display: flex;
-    }
-    #left-menu {
-      position: absolute;
-      padding: 64px 18px 40px 55px;
-      background-color: white;
-      z-index: -1;
-      width: 100%;
-      left: 0;
-    }
-    #left-menu a {
-      text-decoration: none;
-      color: var(--black);
-      font-weight: bold;
-      /* margin-bottom: 24px; */
-    }
-    #left-menu ul {
-      padding: 0;
-      margin: 24px 0 0;
-      list-style: none;
-    }
-    #left-menu ul:nth-child(1) {
-      border-bottom: 1px solid var(--very-light-pink);
-    }
-    #left-menu ul li {
-      margin-bottom: 24px;
-    }
-    .screen-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 290px);
-        gap: 33px;
-        place-content: center;
-        text-align: center;
-        margin-top: 221px;
-      }
-      .screen-card img {
-        width: 290px;
-        object-fit: cover;
-        border: 1px solid #999;
-        padding: 8px;
-        border-radius: 10px;
-      }
+  ul.one,
+  ul.two {
+    display: none;
+  }
+  #unfold-icon > img {
+    display: block;
+    width: 50px;
+    text-align: left;
+  }
+  #left-menu {
+    display: flex;
+  }
+  #left-menu {
+    position: absolute;
+    padding: 64px 18px 40px 55px;
+    background-color: white;
+    z-index: -1;
+    width: 100%;
+    left: 0;
+  }
+  #left-menu a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    /* margin-bottom: 24px; */
+  }
+  #left-menu ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+  }
+  #left-menu ul:nth-child(1) {
+    border-bottom: 1px solid var(--very-light-pink);
+  }
+  #left-menu ul li {
+    margin-bottom: 24px;
+  }
+  .screen-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 290px);
+    gap: 33px;
+    place-content: center;
+    text-align: center;
+    margin-top: 221px;
+  }
+  .screen-card img {
+    width: 290px;
+    object-fit: cover;
+    border: 1px solid #999;
+    padding: 8px;
+    border-radius: 10px;
+  }
 
-      
-      body > section > div.footer-menu > ul{
-        width: 280px;
-        margin-left: 40px;
-      }
+  body > section > div.footer-menu > ul {
+    width: 280px;
+    margin-left: 60px;
+  }
 
-      body > section > div.footer-menu > ul > li:nth-child(2) {
-        display: none;
-      }  
-      
-      
-  }  
+  body > section > div.footer-menu > ul > li:nth-child(2) {
+    display: none;
+  }
+}
