@@ -31,7 +31,7 @@ const photoList = [];
 
 //Mosaic of services explained
 titleLists.push({
-  basic: "The main activities I did where related to branding and marketing from the developers perspective. To upload a website with HTML and CSS features ready to design and to be offered into the market. To ask for reviews from my peers colleges. To assist team meetings, mediate terms and conditions, coordinate updates, debug errors.",
+  basic: "The main activities I did were related to branding and marketing from the developer perspective. To upload a website with HTML and CSS ready to be tracked, indexed and ranked into the market. To ask for reviews from peers. To assist team meetings, mediate terms and conditions, coordinate updates and to debug errors.",
   
 })
 /*
