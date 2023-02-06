@@ -143,18 +143,33 @@ function rowOfArguments () {
       launchNew = `
       <ul>
                       <li>
-                        <a href="/">SOCIAL MEDIA</a>
+                        <a href="/">HOW I .. MY CODE</a>
                       </li>
                     <ul>
                       <li>
-                        <a href="https://www.linkedin.com/in/saori-tovar-64890b166/" target="_blank">LinkedIn</a>
+                        <a href="https://www.codepen.com/" target="/">CodePen</a>
                       </li>
                       <li>
-                        <a href="https://dribbble.com/SaoriUX" target="_blank">Dribble</a>
+                        <a>Build</a>
                       </li>
                       <li>
-                        <a href="https://saoridev.blogspot.com/" target="_blank">Blogger</a>
-                      </li>            
+                        <a>Deploy</a>
+                      </li>    
+                      <li>
+                        <a>Host</a>
+                      </li>  
+                      <li>
+                        <a>Manage</a>
+                      </li>  
+                      <li>
+                        <a>Track</a>
+                      </li>  
+                      <li>
+                        <a>Index</a>
+                      </li>  
+                      <li>
+                        <a>Rate</a>
+                      </li>  
               </ul>
       `
     asideMenu.innerHTML = launchNew
