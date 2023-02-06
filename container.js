@@ -1,13 +1,11 @@
-
-
 /*Menu aside*/
-let toggleStatus = 1
+let toggleStatus = 1;
 /*Mobile*/
 const menuHamIcon = document.getElementById("unfold-icon");
-const asideMenu = document.getElementById("left-menu")
+const asideMenu = document.getElementById("left-menu");
 const asideBanners = [];
 /*Header Blog*/
-let infoCapsule
+let infoCapsule;
 const lastWriting = document.getElementById("unfold-blog");
 const seeText = document.getElementById("writes");
 /* Header About Me*/
@@ -18,8 +16,6 @@ const initTitle = document.getElementById("unfold-experience");
 const viewTask = document.querySelector(".experience-container");
 /* Body content */
 const initBox = document.querySelector(".screen-container");
-
-
 
 menuHamIcon.addEventListener("click", rowOfArguments);
 lastWriting.addEventListener("click", toggleBrief);
@@ -32,9 +28,9 @@ const photoList = [];
 
 //Mosaic of services explained
 titleLists.push({
-  basic: "The main activities I did were related to branding and marketing from the developer perspective. To upload a website with HTML and CSS ready to be tracked, indexed and ranked into the market. To ask for reviews from peers. To assist team meetings, mediate terms and conditions, coordinate updates debug errors.",
-  
-})
+  basic:
+    "The main activities I did were related to branding and marketing from the developer perspective. To upload a website with HTML and CSS ready to be tracked, indexed and ranked into the market. To ask for reviews from peers. To assist team meetings, mediate terms and conditions, coordinate updates debug errors."
+});
 /*
 titleLists.push({
   basic: "Strenghts",
@@ -97,16 +93,16 @@ photoList.push({
   image: "./assets/pizza-website.jpg"
 });
 //Display main tasks during my experience
-function toggleRoutine(){
+function toggleRoutine() {
   window.scrollTo(0, 0);
-  seeText.style.display="none";
-  selectProfile.style.display="none";
+  seeText.style.display = "none";
+  selectProfile.style.display = "none";
   if (toggleStatus == 1) {
     viewTask.style.display = "grid";
-    toggleStatus = 0
+    toggleStatus = 0;
   } else if (toggleStatus == 0) {
     viewTask.style.display = "none";
-    toggleStatus = 1
+    toggleStatus = 1;
   }
 }
 //Display headers
@@ -115,11 +111,11 @@ function togglePersonalCard() {
   viewTask.style.display = "none";
   seeText.style.display = "none";
   if (toggleStatus == 1) {
-  selectProfile.style.display = "flex";
-  toggleStatus = 0
+    selectProfile.style.display = "flex";
+    toggleStatus = 0;
   } else if (toggleStatus == 0) {
     selectProfile.style.display = "none";
-    toggleStatus = 1    
+    toggleStatus = 1;
   }
 }
 function toggleBrief() {
@@ -129,38 +125,29 @@ function toggleBrief() {
   if (toggleStatus == 1) {
     seeText.style.display = "flex";
     toggleStatus = 0;
-  } else if ( toggleStatus == 0) {
+  } else if (toggleStatus == 0) {
     seeText.style.display = "none";
-    toggleStatus = 1
+    toggleStatus = 1;
   }
-
-  
 }
 // Display options on the left
-function rowOfArguments () {
+function rowOfArguments() {
   if (toggleStatus == 1) {
-      asideMenu.style.display = "flex"
-      launchNew = `
+    asideMenu.style.display = "flex";
+    launchNew = `
       <ul>
                       <li>
-                        <a href="/">HOW I .. MY CODE</a>
+                        <p href="/">Coming up next week</p>
+                        <p href="/">How I...</p>
                       </li>
                     <ul>
+                      
                       <li>
-                        <a href="https://www.codepen.com/" target="/">CodePen</a>
-                      </li>
-                      <li>
-                        <a>Build</a>
-                      </li>
-                      <li>
-                        <a>Deploy</a>
-                      </li>    
+                        <a>Write</a>
+                      </li>   
                       <li>
                         <a>Host</a>
-                      </li>  
-                      <li>
-                        <a>Manage</a>
-                      </li>  
+                      </li>   
                       <li>
                         <a>Track</a>
                       </li>  
@@ -170,27 +157,29 @@ function rowOfArguments () {
                       <li>
                         <a>Rate</a>
                       </li>  
+                      <li>
+                        <p>my own code.</p>
+                      </li> 
               </ul>
-      `
-    asideMenu.innerHTML = launchNew
+      `;
+    asideMenu.innerHTML = launchNew;
     toggleStatus = 0;
   } else if (toggleStatus == 0) {
     asideMenu.style.display = "none";
-    toggleStatus = 1
-    
-  }  
+    toggleStatus = 1;
+  }
 }
 //Display main tasks during my experience
-function toggleRoutine(){
+function toggleRoutine() {
   window.scrollTo(0, 0);
-  seeText.style.display="none";
-  selectProfile.style.display="none";
+  seeText.style.display = "none";
+  selectProfile.style.display = "none";
   if (toggleStatus == 1) {
     viewTask.style.display = "flex";
-    toggleStatus = 0
+    toggleStatus = 0;
   } else if (toggleStatus == 0) {
     viewTask.style.display = "none";
-    toggleStatus = 1
+    toggleStatus = 1;
   }
 }
 function startTitles(secondArray) {
@@ -201,7 +190,7 @@ function startTitles(secondArray) {
     contentTitle.classList.add("list-styles");
     viewTask.appendChild(contentTitle);
   }
-} 
+}
 function loadPhotos(array) {
   for (photo of array) {
     const cardGroup = document.createElement("div");
@@ -214,7 +203,6 @@ function loadPhotos(array) {
     ancherLink.setAttribute("href", photo.tag);
     ancherLink.setAttribute("target", "_blank");
     groupImage.setAttribute("src", photo.image);
-    
 
     cardGroup.appendChild(ancherLink);
     ancherLink.appendChild(groupImage);
@@ -223,5 +211,4 @@ function loadPhotos(array) {
   startTitles(titleLists);
 }
 
-
-loadPhotos(photoList)
+loadPhotos(photoList);
