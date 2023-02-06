@@ -1,7 +1,33 @@
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 390px);
+  gap: 91px;
+  place-content: center;
+}
+body > div > ul {
+  top: 50%;
+  margin: 0;
+  font-family: "Alegreya Sans", sans-serif;
+}
+.experience-container > li:nth-child(1){
+  grid-column-start: 1;
+}
+.experience-container > li:nth-child(2){
+  grid-column-start: 2;
+}
+.experience-container > li:nth-child(3){
+  grid-column-start: 3;
+}
+.experience-container > li {
+  text-decoration: none;
+  list-style: none;
+}
+
 .screen-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, 390px);
   gap: 91px;
+  text-align: center;
   place-content: center;
   margin-top: 200px;
 }

@@ -13,17 +13,21 @@ const seeText = document.getElementById("writes");
 /* Header About Me*/
 const aboutMe = document.getElementById("unfold-card");
 const selectProfile = document.getElementById("profile-card");
+/* Header Experience*/
+const initTitle = document.getElementById("unfold-experience");
+const viewTask = document.querySelector(".experience-container");
 /* Body content */
 const initBox = document.querySelector(".screen-container");
-const initTitle = document.querySelector(".title-container");
+
+
+
+menuHamIcon.addEventListener("click", rowOfArguments);
+lastWriting.addEventListener("click", toggleBrief);
+aboutMe.addEventListener("click", togglePersonalCard);
+initTitle.addEventListener("click", toggleRoutine);
 
 const titleLists = [];
 const photoList = [];
-
-lastWriting.addEventListener("click", toggleBrief);
-aboutMe.addEventListener("click", togglePersonalCard);
-menuHamIcon.addEventListener("click", rowOfArguments);
-
 
 //Mosaic of services explained
 titleLists.push({
@@ -91,9 +95,23 @@ photoList.push({
   tag: "http://damici.co/",
   image: "./assets/pizza-website.jpg"
 });
+//Display main tasks
+function toggleRoutine(){
+  window.scrollTo(0, 0);
+  seeText.style.display="none";
+  selectProfile.style.display="none";
+  if (toggleStatus == 1) {
+    viewTask.style.display = "grid";
+    toggleStatus = 0
+  } else if (toggleStatus == 0) {
+    viewTask.style.display = "none";
+    toggleStatus = 1
+  }
+}
 //Display headers
 function togglePersonalCard() {
   window.scrollTo(0, 0);
+  viewTask.style.display = "none";
   seeText.style.display = "none";
   if (toggleStatus == 1) {
   selectProfile.style.display = "flex";
@@ -105,6 +123,7 @@ function togglePersonalCard() {
 }
 function toggleBrief() {
   window.scrollTo(0, 0);
+  viewTask.style.display = "none";
   selectProfile.style.display = "none";
   if (toggleStatus == 1) {
     seeText.style.display = "flex";
@@ -154,17 +173,13 @@ function rowOfArguments () {
   }  
 }
 
-function startTitles(array) {
-  for (title of array) {
-    const boxGreat = document.createElement("div");
-    const groupUnordered = document.createElement("ul");
+function startTitles(secondArray) {
+  for (title of secondArray) {
     const contentTitle = document.createElement("li");
 
     contentTitle.innerHTML = title.basic;
-
-    boxGreat.appendChild(groupUnordered);
-    groupUnordered.appendChild(contentTitle);
-    initTitle.appendChild(boxGreat);
+    contentTitle.classList.add("list-styles");
+    viewTask.appendChild(contentTitle);
   }
 } 
 function loadPhotos(array) {
@@ -173,18 +188,20 @@ function loadPhotos(array) {
     const groupImage = document.createElement("img");
     const ancherLink = document.createElement("a");
 
+    cardGroup.classList.add("screen-card");
+    ancherLink.innerHTML = photo.tag;
+
     ancherLink.setAttribute("href", photo.tag);
     ancherLink.setAttribute("target", "_blank");
-    cardGroup.classList.add("screen-card");
     groupImage.setAttribute("src", photo.image);
-    ancherLink.innerHTML = photo.tag;
+    
 
     cardGroup.appendChild(ancherLink);
     ancherLink.appendChild(groupImage);
     initBox.appendChild(cardGroup);
   }
-
+  startTitles(titleLists);
 }
 
-startTitles(titleLists);
+
 loadPhotos(photoList)
