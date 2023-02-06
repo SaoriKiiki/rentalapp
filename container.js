@@ -32,7 +32,11 @@ const photoList = [];
 
 //Mosaic of services explained
 titleLists.push({
-  basic: "The main activities I did were related to branding and marketing from the developer perspective. To upload a website with HTML and CSS ready to be tracked, indexed and ranked into the market. To ask for reviews from peers. To assist team meetings, mediate terms and conditions, coordinate updates debug errors.",
+  basic: "Graphic designer +4 years of experience designing around softwares as Figma, Adobe XD 
+and more user interfaces creation. English proficiency and fluency. Styling for the interactions 
+modules for Version Books for web-based and mobile apps regarding brand and marketing. 
+Work in team and give a professional style to each design, with a unique and personal 
+concept, used to get things done and used to design systems. ",
   
 })
 /*
