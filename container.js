@@ -32,8 +32,8 @@ const photoList = [];
 //Mosaic of services explained
 titleLists.push({
   basic: "List of main activities ",
-  question: "What did I do in my 2022 previous job? ",
-  answer:"To maintain the code. To checked and shared pain points in the design of the website. To ask for reviews from my peers colleges. Asssit team meetings, mediate terms and conditions, coordinate updates, debug errors. "
+  question: "Deploy a Website ",
+  answer:"Checked and shared "
 })
 titleLists.push({
   basic: "Strenghts",
@@ -95,7 +95,7 @@ photoList.push({
   tag: "http://damici.co/",
   image: "./assets/pizza-website.jpg"
 });
-//Display main tasks
+//Display main tasks during my experience
 function toggleRoutine(){
   window.scrollTo(0, 0);
   seeText.style.display="none";
@@ -142,9 +142,8 @@ function rowOfArguments () {
       launchNew = `
       <ul>
                       <li>
-                        <a href="/">PORTFOLIO</a>
+                        <a href="/">SOCIAL MEDIA</a>
                       </li>
-                      
                     <ul>
                       <li>
                         <a href="https://www.linkedin.com/in/saori-tovar-64890b166/" target="_blank">LinkedIn</a>
@@ -153,15 +152,8 @@ function rowOfArguments () {
                         <a href="https://dribbble.com/SaoriUX" target="_blank">Dribble</a>
                       </li>
                       <li>
-                        <a href="https://www.behance.net/arteisa201c55a/" target="_blank">Behance</a>
-                      </li>
-                      <li>
                         <a href="https://saoridev.blogspot.com/" target="_blank">Blogger</a>
-                      </li>
-                      <li>
-                        <a href="https://linkr.bio/saoridev" target="_blank">Linkr</a>
-                      </li>
-                      
+                      </li>            
               </ul>
       `
     asideMenu.innerHTML = launchNew
@@ -172,10 +164,22 @@ function rowOfArguments () {
     
   }  
 }
-
+//Display main tasks during my experience
+function toggleRoutine(){
+  window.scrollTo(0, 0);
+  seeText.style.display="none";
+  selectProfile.style.display="none";
+  if (toggleStatus == 1) {
+    viewTask.style.display = "flex";
+    toggleStatus = 0
+  } else if (toggleStatus == 0) {
+    viewTask.style.display = "none";
+    toggleStatus = 1
+  }
+}
 function startTitles(secondArray) {
   for (title of secondArray) {
-    const contentTitle = document.createElement("li");
+    const contentTitle = document.createElement("ul");
 
     contentTitle.innerHTML = title.basic;
     contentTitle.classList.add("list-styles");
