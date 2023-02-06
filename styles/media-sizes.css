@@ -1,10 +1,18 @@
 @media (max-width: 780px) {
-  .screen-container {
-    margin-top: 250px;
-  }
   .experience-container {
-    display: none;
+    display: grid;
+    grid-template-columns: repeat(1, 290px);
+    place-content: center;
+    background-color: #D6EAF8;
+    padding: 240px 40px 0px 40px;
+    margin-left: 150px;
+    margin-right: 150px;
   }
+  
+  .screen-container {
+    margin-top: 50px;
+  }
+ 
   nav.encircled-part {
     display: flex;
     justify-content: space-around;
@@ -45,12 +53,17 @@
 }
 
 @media (max-width: 640px) {
-  .screen-container {
-    margin-top: 250px;
-  }
   .experience-container {
-    display: none;
+    display: grid;
+    grid-template-columns: repeat(1, 190px);
+    place-content: center;
+    background-color: #D6EAF8;
+    padding: 240px 40px 0px 40px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
+  
+  
   nav.encircled-part {
     display: flex;
     justify-content: space-around;
@@ -99,7 +112,7 @@
     gap: 33px;
     place-content: center;
     text-align: center;
-    margin-top: 221px;
+    margin-top: 51px;
   }
   .screen-card img {
     width: 290px;

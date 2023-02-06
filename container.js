@@ -24,6 +24,7 @@ const initBox = document.querySelector(".screen-container");
 menuHamIcon.addEventListener("click", rowOfArguments);
 lastWriting.addEventListener("click", toggleBrief);
 aboutMe.addEventListener("click", togglePersonalCard);
+
 initTitle.addEventListener("click", toggleRoutine);
 
 const titleLists = [];
@@ -31,7 +32,7 @@ const photoList = [];
 
 //Mosaic of services explained
 titleLists.push({
-  basic: "The main activities I did were related to branding and marketing from the developer perspective. To upload a website with HTML and CSS ready to be tracked, indexed and ranked into the market. To ask for reviews from peers. To assist team meetings, mediate terms and conditions, coordinate updates and to debug errors.",
+  basic: "The main activities I did were related to branding and marketing from the developer perspective. To upload a website with HTML and CSS ready to be tracked, indexed and ranked into the market. To ask for reviews from peers. To assist team meetings, mediate terms and conditions, coordinate updates debug errors.",
   
 })
 /*

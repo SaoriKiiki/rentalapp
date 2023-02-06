@@ -4,7 +4,6 @@
   place-content: center;
   background-color: #D6EAF8;
   padding: 240px 40px 0px 40px;
-  z-index: 1;  
   margin-left: 250px;
   margin-right: 250px;
 }
@@ -21,7 +20,7 @@
   gap: 91px;
   text-align: center;
   place-content: center;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .screen-card:hover {
