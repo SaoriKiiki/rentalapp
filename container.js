@@ -29,7 +29,7 @@ const photoList = [];
 //Mosaic of services explained
 titleLists.push({
   basic:
-    "Graphic designer +4 years of experience designing around softwares as Figma, Adobe XD and more user interfaces creation. English proficiency and fluency. Styling for the interactions modules for Version Books for web-based and mobile apps regarding brand and marketing. "
+    "Web designer +4 years of experience designing around softwares as Figma, Adobe XD and more user interfaces creation. English proficiency and fluency. Styling for the interactions modules for Version Books for web-based and mobile apps regarding brand and marketing. "
 });
 /*
 titleLists.push({
