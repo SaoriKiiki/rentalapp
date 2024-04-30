@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-12-houses",
+  "version": "1.0.0",
+  "description": "",
+  "main": "container.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "node"
+  ],
+  "author": "Saori Bogart <saorisabeltovar@gmail.com>",
+  "license": "MIT",
+  "description": "I have to do my projects with this setup",
+  "dependencies": {
+    "json-server": "^0.15.0",
+    "moment": "^2.29.3",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.17.0"
+  }
+
+}
