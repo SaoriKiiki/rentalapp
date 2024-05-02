@@ -44,8 +44,17 @@ class HashTable{
             }   
         }
     }
-}        
-
+    getAllKeys(){
+        const array = this.data;
+        if (array.length === 0) {
+            return undefined;
+        }
+        let keys = array
+            .flat()
+            .map(([name]) => name);
+        return keys;
+    }
+}
 const myHashTable = new HashTable(50);
 
 myHashTable.set("Saori", 1989);
