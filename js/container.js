@@ -10,9 +10,6 @@ const initBox = document.querySelector(".album-friend");
     photos.push({
              image: 'https://images.pexels.com/photos/1037989/pexels-photo-1037989.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 })
-    photos.push({
-            image: 'https://images.pexels.com/photos/1037989/pexels-photo-1037989.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-})
 
     function loadPhotos() {
 
