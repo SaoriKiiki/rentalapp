@@ -1,29 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Saori Isabel">
-    <meta name="description" content="Front-end">
-    <title>Community of friends</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-</head>
-<body>
-    
-    <main class="album-friend">
-        <h1>Online Friends</h1>
-<!--        Javascript Function loadPhotos-->
-    </main>
-    <script src="./js/container.js"></script>
-    <script src="./js/scripts.js"></script>
-    <script src="./js/singly.js"></script>
-    <script src="./js/doubly.js"></script>
-    <script src="./js/stack.js"></script>
-    <script src="./js/queue.js"></script>
-    <script src="./js/tree.js"></script>
+<html>
+  <head>
+    <title>My Singly Linked List</title>
+  </head>
+  <body>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        .line {
+          counter-increment: line-number;
+          margin-bottom: 10px;
+        }
+        .line::before {
+          content: counter(line-number) ". ";
+          color: blue;
+        }
+        .line::after {
+          content: " " counter(line-number) "; ";
+          float: right;
+          color: blue;
+        }
+        .random-number {
+          color: red;
+        }
+      </style>
+    <div class="line">
+        <span class="random-number">First step:</span>
+        Click the button "Create Row of Numbers"
+      </div>
+      <div class="line">
+        <span class="random-number">Second step:</span>
+        Click on Add 2 and see what happens
+      </div>
+      <div class="line">
+        <span class="random-number">Third Step:</span>
+        Click on Add 3 and see what happens
+      </div>
+      <div class="line">
+        <span class="random-number">Fourth Step:</span>
+        Click on Search to find Number 5
+      </div>
+    <button onclick="createList()">Create Row</button>
+    <button onclick="insertFirstNode()">Add 2</button>
+    <button onclick="insertLastNode()">Add 3</button>
+    <button onclick="insertRandomNode()">Insert Random Node</button>
+    <button onclick="searchList()">Search List</button>
+    <h2 id="result"></h2>
 
+    <script>
+      class Node {
+        constructor(value) {
+          this.value = value;
+          this.next = null;
+        }
+      }
 
-</body>
+      class MySinglyLinkedList {
+        constructor(value) {
+          this.head = {
+            value: value,
+            next: null,
+          };
+          this.tail = this.head;
+
+          this.length = 1;
+        }
+
+        insertLast(value) {
+          const newNode = new Node(value);
+          this.tail.next = newNode;
+          this.tail = newNode;
+          this.length++;
+          return this;
+        }
+
+        insertFirst(value) {
+          const newNode = new Node(value);
+          newNode.next = this.head;
+          this.head = newNode;
+          this.length++;
+          return this;
+        }
+
+        insertRandom(index, value) {
+          if (index >= this.length) {
+            return this.insertLast(value);
+          }
+
+          const newNode = new Node(value);
+          const firstPointer = this.getIndex(index - 1);
+          const holdPointer = firstPointer.next;
+          firstPointer.next = newNode;
+          newNode.next = holdPointer;
+          this.length++;
+          return this;
+        }
+
+        getIndex(index) {
+          let counter = 0;
+          let currentNode = this.head;
+
+          while (counter !== index) {
+            currentNode = currentNode.next;
+            counter++;
+          }
+
+          return currentNode;
+        }
+
+        search(value) {
+          let currentNode = this.head;
+          let index = 0;
+
+          while (currentNode !== null) {
+            if (currentNode.value === value) {
+              return `Value ${value} found at index ${index}`;
+            }
+
+            currentNode = currentNode.next;
+            index++;
+          }
+
+          return `Value ${value} not found`;
+        }
+      }
+
+      let myLinkedList = new MySinglyLinkedList(1);
+      
+
+      function createList() {
+        let currentNode = myLinkedList.head;
+        let listString = '';
+        while (currentNode !== null) {
+        listString += currentNode.value + ' 👉 ';
+        currentNode = currentNode.next;
+        }
+        listString += 'null';
+        document.getElementById("result").innerHTML = listString;
+      }
+
+      function insertFirstNode() {
+        let currentNode = myLinkedList.head;
+        let listString = '';
+        while (currentNode !== null) {
+        listString += currentNode.value + ' 👉 ';
+        currentNode = currentNode.next;
+        }
+        listString += 'null';
+        myLinkedList.insertFirst(2);
+        document.getElementById("result").innerHTML = listString;
+
+      }
+
+      function insertLastNode() {
+        let currentNode = myLinkedList.head;
+        let listString = '';
+        while (currentNode !== null) {
+        listString += currentNode.value + ' 👉 ';
+        currentNode = currentNode.next;
+        }
+        listString += 'null';
+        myLinkedList.insertLast(3);
+        document.getElementById("result").innerHTML = listString;
+      }
+
+      function insertRandomNode() {
+        let currentNode = myLinkedList.head;
+        let listString = '';
+        while (currentNode !== null) {
+        listString += currentNode.value + ' 👉 ';
+        currentNode = currentNode.next;
+        }
+        listString += 'null';
+        myLinkedList.insertRandom(2, 5);
+        document.getElementById("result").innerHTML = listString;
+      }
+
+      function searchList() {
+        document.getElementById("result").innerHTML = myLinkedList.search(5);
+      }
+
+    </script>
+  </body>
 </html>
+
